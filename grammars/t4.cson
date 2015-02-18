@@ -1,0 +1,41 @@
+'name': 'T4'
+'scopeName': 'text.t4'
+'fileTypes': [
+    'tt'
+    'ttinclude'
+]
+'patterns': [
+  {
+    'begin': '<#@'
+    'end': '#>'
+    'name': 'text.directive.t4'
+    'patterns': [
+      {
+        'match': '\\b(template|assembly|import|include|output)\\b'
+        'captures':
+          '1':
+            'name': 'keyword.other.t4'
+      }
+      {
+        'begin': '"'
+        'end': '"'
+        'name': 'string.quoted.double.t4'
+      }
+      {
+        'match': '\\b([a-zA-Z0-9]+)'
+        'captures':
+          '1':
+            'name': 'entity.other.attribute-name.t4'
+      }
+    ]
+  }
+  {
+    'begin': '<#[=+ ]+'
+    'end': '#>'
+    'patterns': [
+      {
+        'include': 'source.cs'
+      }
+    ]
+  }
+]
