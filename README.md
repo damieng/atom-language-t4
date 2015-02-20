@@ -1,6 +1,4 @@
 # language-t4
-T4 templating language support for Atom
-
 This grammar adds support for the T4 text-transformation-tool syntax to Atom.
 
 ## Limitations
