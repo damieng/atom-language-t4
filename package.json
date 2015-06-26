@@ -6,13 +6,13 @@
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.github.io/language-t4",
+  "homepage": "http://atom.github.io/atom-language-t4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/damieng/language-t4.git"
+    "url": "https://github.com/damieng/atom-language-t4.git"
   },
   "license": "Apache 2",
   "bugs": {
-    "url": "https://github.com/damieng/language-t4/issues"
+    "url": "https://github.com/damieng/atom-language-t4/issues"
   }
 }
